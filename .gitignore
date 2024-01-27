@@ -1,0 +1,10 @@
+.pnpm-store/
+node_modules/
+dist/
+coverage/
+storybook-static/
+.turbo/
+!.turbo/config.json
+.DS_Store
+.next
+.env*.local
