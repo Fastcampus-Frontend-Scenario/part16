@@ -6,7 +6,8 @@
   "scripts": {
     "lint-staged": "lint-staged",
     "postinstall": "if [[ -x \"$(command -v husky)\" ]]; then husky install; fi",
-    "cli": "node ./scripts/cli/index.mjs"
+    "cli": "node ./scripts/cli/index.mjs",
+    "bp": "node ./scripts/boilerplate/index.mjs"
   },
   "keywords": [],
   "author": "Vallista",
