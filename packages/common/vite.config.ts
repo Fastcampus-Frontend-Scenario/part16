@@ -1,7 +1,6 @@
 import path from 'node:path'
 
 import babel, { getBabelOutputPlugin } from '@rollup/plugin-babel'
-import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin'
 import react from '@vitejs/plugin-react-swc'
 import { defineConfig } from 'vite'
 
@@ -59,11 +58,6 @@ export default defineConfig({
     },
     sourcemap: true,
   },
-  plugins: [
-    react(),
-    vanillaExtractPlugin({
-      identifiers: process.env.NODE_ENV === 'development' ? 'debug' : 'short',
-    }),
-  ],
+  plugins: [react()],
   publicDir: false,
 })
