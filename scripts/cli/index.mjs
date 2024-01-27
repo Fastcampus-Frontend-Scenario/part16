@@ -4,14 +4,15 @@
 import { hideBin } from 'yargs/helpers'
 import yargs from 'yargs/yargs'
 
+import dev from './dev.mjs'
 import start from './start.mjs'
 
 const shortshands = {
   dev: 'development',
   prod: 'production',
-};
+}
 
-const setPositionalEnv = yargs =>
+const setPositionalEnv = (yargs) =>
   yargs
     .positional('env', {
       coerce: parseEnv,
@@ -25,15 +26,11 @@ const setPositionalEnv = yargs =>
 
 yargs(hideBin(process.argv))
   .scriptName('cli')
-  .command(
-    'start [env] [local]',
-    '개발 환경을 실행합니다.',
-    setPositionalEnv,
-    argv => start(argv.env, argv)
-  )
+  .command('dev [env] [local]', '개발 환경을 실행합니다.', setPositionalEnv, (argv) => dev(argv.env, argv))
+  .command('start [env] [local]', '어플리케이션을 실행합니다.', setPositionalEnv, (argv) => start(argv.env, argv))
   .choices('env', ['dev', 'development', 'prod', 'production'])
-  .help().argv;
+  .help().argv
 
 function parseEnv(input) {
-  return shortshands[input] || input;
+  return shortshands[input] || input
 }

@@ -11,17 +11,6 @@
   "keywords": [],
   "author": "Vallista",
   "license": "ISC",
-  "dependencies": {
-    "@rushstack/eslint-patch": "^1.7.0",
-    "@typescript-eslint/eslint-plugin": "6",
-    "@typescript-eslint/parser": "6",
-    "eslint-config-prettier": "9",
-    "eslint-import-resolver-typescript": "3",
-    "eslint-plugin-import": "2",
-    "eslint-plugin-prettier": "5",
-    "eslint-plugin-react": "7",
-    "eslint-plugin-react-hooks": "4"
-  },
   "devDependencies": {
     "eslint": "8",
     "eslint-config-turbo": "0.0.8",
@@ -33,7 +22,16 @@
     "chalk": "^5.3.0",
     "dotenv": "16.3.1",
     "execa": "7.2.0",
-    "yargs": "17.7.2"
+    "yargs": "17.7.2",
+    "@rushstack/eslint-patch": "^1.7.0",
+    "@typescript-eslint/eslint-plugin": "6",
+    "@typescript-eslint/parser": "6",
+    "eslint-config-prettier": "9",
+    "eslint-import-resolver-typescript": "3",
+    "eslint-plugin-import": "2",
+    "eslint-plugin-prettier": "5",
+    "eslint-plugin-react": "7",
+    "eslint-plugin-react-hooks": "4"
   },
   "engines": {
     "node": "18",
