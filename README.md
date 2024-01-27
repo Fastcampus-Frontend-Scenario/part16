@@ -14,7 +14,7 @@ $ pnpm install
 - node@18.16.0
 - pnpm@8.3.1
 
-### prettier 활성화
+### prettier activation
 
 1. extension - Prettier 다운로드
 2. CMD + , (혹은 Ctrl + ,)
@@ -22,3 +22,11 @@ $ pnpm install
 4. Prettier로 Default Formatter 수정
 5. format on save 검색
 6. Editor: format on save 체크 설정
+
+### how to run
+
+```
+$ pnpm install
+$ pnpm cli build (dev)
+$ pnpm cli dev (dev)
+```
