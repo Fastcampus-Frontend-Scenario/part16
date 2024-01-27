@@ -12,6 +12,7 @@
     "@emailjs/browser": "^3.11.0",
     "@reduxjs/toolkit": "^1.9.5",
     "@tosspayments/payment-sdk": "^1.6.1",
+    "chart.js": "^4.4.1",
     "classnames": "^2.3.2",
     "dayjs": "^1.11.7",
     "firebase": "^9.22.1",
@@ -28,13 +29,13 @@
     "sass": "^1.62.1"
   },
   "devDependencies": {
-    "eslint": "8.41.0",
-    "eslint-config-next": "13.4.4",
-    "typescript": "^5.0.4",
+    "@monorepo-library/common": "workspace:*",
+    "@monorepo-library/tsconfig": "workspace:*",
     "@types/node": "20.2.5",
     "@types/react": "18.2.7",
     "encoding": "^0.1.13",
-    "@monorepo-library/tsconfig": "workspace:*",
-    "@monorepo-library/common": "workspace:*"
+    "eslint": "8.41.0",
+    "eslint-config-next": "13.4.4",
+    "typescript": "^5.0.4"
   }
 }

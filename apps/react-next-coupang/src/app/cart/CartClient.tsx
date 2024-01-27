@@ -16,7 +16,7 @@ import {
 } from '@/redux/slice/cartSlice'
 import { useRouter } from 'next/navigation'
 import { selectIsLoggedIn } from '@/redux/slice/authSlice'
-import Heading from '@/components/heading/Heading'
+import { Heading } from '@monorepo-library/common'
 import Link from 'next/link'
 import Image from 'next/image'
 import priceFormat from '@/utils/priceFormat'

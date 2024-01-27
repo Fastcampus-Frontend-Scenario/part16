@@ -1,7 +1,7 @@
 'use client'
 import React, { FormEvent } from 'react'
 import styles from './Checkout.module.scss'
-import Heading from '@/components/heading/Heading'
+import { Heading } from '@monorepo-library/common'
 import CheckoutForm from '@/components/checkoutForm/CheckoutForm'
 import { Button } from '@monorepo-library/common'
 import { loadTossPayments } from '@tosspayments/payment-sdk'

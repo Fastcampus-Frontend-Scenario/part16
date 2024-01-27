@@ -1,7 +1,6 @@
 'use client'
 import { Button } from '@monorepo-library/common'
-import Heading from '@/components/heading/Heading'
-import Loader from '@/components/loader/Loader'
+import { Loader, Heading } from '@monorepo-library/common'
 import { db, storage } from '@/firebase/firebase'
 import useFetchDocument from '@/hooks/useFetchDocument'
 import { Timestamp, doc, setDoc } from 'firebase/firestore'

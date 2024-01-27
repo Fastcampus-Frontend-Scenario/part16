@@ -4,7 +4,7 @@ import styles from './CheckoutAddress.module.scss'
 import { useDispatch } from 'react-redux'
 import { useRouter } from 'next/navigation'
 import { SAVE_BILLING_ADDRESS, SAVE_SHIPPING_ADDRESS } from '@/redux/slice/checkoutSlice'
-import Heading from '@/components/heading/Heading'
+import { Heading } from '@monorepo-library/common'
 import { Button } from '@monorepo-library/common'
 
 const initialAddressState = {

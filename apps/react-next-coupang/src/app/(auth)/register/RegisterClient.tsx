@@ -1,12 +1,11 @@
 'use client'
-import Loader from '@/components/loader/Loader'
+import { Loader, Divider } from '@monorepo-library/common'
 import { useRouter } from 'next/navigation'
 import React, { useState } from 'react'
 import styles from '../login/Auth.module.scss'
 import Image from 'next/image'
 import Input from '@/components/Input/Input'
 import { Button } from '@monorepo-library/common'
-import Divider from '@/components/divider/Divider'
 import Link from 'next/link'
 
 import LogoPath from '@/assets/colorful.svg'

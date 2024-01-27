@@ -3,12 +3,9 @@ import React from 'react'
 import styles from './OrderDetails.module.scss'
 import { useParams, useRouter } from 'next/navigation'
 import useFetchDocument from '@/hooks/useFetchDocument'
-import Heading from '@/components/heading/Heading'
-import Loader from '@/components/loader/Loader'
+import { Heading, Loader, Button } from '@monorepo-library/common'
 import Image from 'next/image'
 import priceFormat from '@/utils/priceFormat'
-import Link from 'next/link'
-import { Button } from '@monorepo-library/common'
 import { ICartItem } from '@/types'
 
 const OrderDetailsClient = () => {

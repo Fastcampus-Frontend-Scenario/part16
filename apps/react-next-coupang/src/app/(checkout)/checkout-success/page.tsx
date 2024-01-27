@@ -1,4 +1,4 @@
-import Heading from '@/components/heading/Heading'
+import { Heading } from '@monorepo-library/common'
 import React from 'react'
 import styles from './CheckoutSuccess.module.scss'
 import priceFormat from '@/utils/priceFormat'
