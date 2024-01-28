@@ -7,7 +7,8 @@
     "lint-staged": "lint-staged",
     "postinstall": "if [[ -x \"$(command -v husky)\" ]]; then husky install; fi",
     "cli": "node ./scripts/cli/index.mjs",
-    "bp": "node ./scripts/boilerplate/index.mjs"
+    "bp": "node ./scripts/boilerplate/index.mjs",
+    "graph": "turbo run dev --graph"
   },
   "keywords": [],
   "author": "Vallista",
