@@ -7,3 +7,5 @@ node_modules
 *.mjs
 
 *.d.ts
+
+scripts/boilerplate/__template__
