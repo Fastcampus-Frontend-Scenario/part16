@@ -17,6 +17,6 @@
     "strict": true,
     "target": "ESNext",
     "experimentalDecorators": true,
-    "exclude": ["scripts/boilerplate/__template__"]
-  }
+  },
+  "exclude": ["scripts/boilerplate/__template__"],
 }
