@@ -11,7 +11,7 @@ export default async (env, argv) => {
   console.log(`${chalk.green(env)} 환경에서 실행합니다.`)
 
   try {
-    await execa('concurrently', ['-n', 'common', 'pnpm --filter @monorepo-library/common build'], {
+    await execa('turbo', ['run', 'build'], {
       stdio: 'inherit',
     })
   } catch (e) {
