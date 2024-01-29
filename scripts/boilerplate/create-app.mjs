@@ -11,7 +11,7 @@ const output = path.join(process.cwd(), 'apps')
  * template을 카피 후 복사 붙여넣기 합니다.
  * 그러면서 TEMPLATE_NAME 부분을 치환합니다.
  */
-async function templatePasteAfterCopy(name) {
+async function templatePasteAfterCopy(name, packageName) {
   const makeFolder = path.join(output, name)
 
   await fs.mkdirSync(path.join(makeFolder))
@@ -21,15 +21,15 @@ async function templatePasteAfterCopy(name) {
   const packageJsonFileText = await fs.readFileSync(packageJsonPath, {
     encoding: 'utf-8',
   })
-  const result = packageJsonFileText.replace('TEMPLATE_NAME', name)
+  const result = packageJsonFileText.replace('TEMPLATE_NAME', packageName)
   await fs.writeFileSync(packageJsonPath, result)
 }
 
-export default async (name) => {
-  console.log(`${chalk.green(name)}을 생성합니다.`)
+export default async (name, packageName) => {
+  console.log(`${chalk.green(name)} ${chalk.red(packageName)}을 생성합니다.`)
 
   try {
-    await templatePasteAfterCopy(name)
+    await templatePasteAfterCopy(name, packageName)
   } catch (e) {
     console.error('\n' + (e.shortMessage || e.message))
     process.exit(e.exitCode || 1)
